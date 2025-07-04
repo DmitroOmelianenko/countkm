@@ -1,0 +1,180 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Темний напівпрозорий шар */
+    url(./img/gornii.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+     height: 100%; /* Це важливо! Забезпечує, що html та body мають повну висоту */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+button {
+    cursor: pointer;
+}
+
+.backgdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    animation: fadeIn 0.3s ease-out;
+}
+
+
+
+.modal {
+     background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    max-width: 500px;
+    height: 400px;
+    z-index: 10000;
+    position: relative;
+    animation: slideIn 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transform: scale(0.95);
+    display: none;
+     
+}
+
+.modal-content {
+    border: none;
+}
+
+.name_block-modal {
+    margin-top: 20px;
+}
+
+.input_name {
+    background-color: rgb(186, 186, 186);
+    border: solid 1px black;
+    border-radius: 10px;
+    color: white;
+}
+
+
+
+.create-block {
+    background-color: white;
+    border: solid black 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    width: 270px;
+    height: 50px;
+    margin-top: 40px;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    display: block;
+    margin-right: auto;
+}
+
+.input_name {
+    width: 180px;
+    margin-top: 20px;
+}
+
+.name_block-button {
+    width: 80px;
+    margin-top: 20px;
+    display: block;
+    background-color: rgb(238, 238, 238);
+    width: 130px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.bloks-item {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+
+
+.input-km {
+    width: 100px;
+    background-color: rgb(202, 202, 202);
+    color: black;
+    border-radius: 10px;
+}
+
+#welcomeMessage {
+    width: 600px;
+    color: white;
+    padding-top: 40px;
+}
+
+.flex {
+    display: flex;
+    gap: 60px;
+}
+
+li {
+    border: solid #fff;
+    width: 200px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.bloks_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    color: white;
+    margin-top: 100px;
+    position: fixed;
+}
+
+.add_travel {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+
+.remove_travel {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+
+.calculate_sum {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+
+.clear-all-btn {
+    background-color: white;
+    width: 170px;
+    position: absolute;
+    border: solid 1.5px red;
+    border-radius: 10px;
+    transition: ease 1s;
+}
+
+.clear-all-btn:hover {
+    background-color: red;
+    border: solid 1.5px black;
+    color: white;
+    transition: ease 1s;
+}
